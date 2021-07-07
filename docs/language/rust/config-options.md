@@ -2,7 +2,7 @@
 layout: default
 title: Configuration Options ("Features")
 nav_order: 1000
-has_children: true
+has_children: false
 ---
 
 # Languages

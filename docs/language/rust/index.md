@@ -2,7 +2,7 @@
 layout: default
 title: Rust
 nav_order: 100
-has_children: true
+has_children: false
 ---
 
 # Rust
