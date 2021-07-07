@@ -1,0 +1,84 @@
+# Copied from github.com/unicode-org/icu before making changes.
+# License of copied file (github.com/unicode-org/icu/docs/_config.yml):
+# © 2020 and later: Unicode, Inc. and others.
+# License & terms of use: http://www.unicode.org/copyright.html
+
+title: Elango's Learnings
+email: elango.cheran@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Notes & tutorials, 
+  via unit test code snippets & docs HTML pages,
+  for internationalization (i18n), programming languages, build tools, libraries, & more.
+  In other words, what helps me reinforce ongoing learning.
+baseurl: "/learning" # the subpath for the site
+url: "https://echeran.github.io" # the base hostname & protocol for your site
+
+twitter_username: elango
+github_username:  echeran
+
+remote_theme: pmarsceill/just-the-docs
+
+# GitHub uses its own markdown renderer called CommonMarkGhPages.
+#
+# To use this we'd need to set the following options:
+#     markdown: CommonMarkGhPages
+#     Plugins:
+#       jekyll-commonmark-ghpages
+#  
+#     commonmark:
+#       options: ["SMART", "FOOTNOTES"]
+#       extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+#
+# However, it doesn't work well with Jekyll and the Just-The-Docs theme,
+# and causes too many formatting problems. Additionally, it also doesn't
+# have any support for auto-generating a Table of Contents (TOC) section
+# for a page. Due to these reasons, we instead use the recommended
+# markdown renderer for Jekyll, called kramdown.
+#
+markdown: kramdown
+
+# Notes on plugins:
+#  - GitHub Pages ignores all plugins included in the Gemfile.
+#    - Only the ones listed in the _config.yml file (this file) are used.
+#  - There is a very limited set of plugins that GH Pages supports (for security
+#    reasons). The listing is here: https://pages.github.com/versions
+#  - The jekyll-sitemap plugin generates a "sitemap.xml" for search engines.
+#  - We need the "jemoji" plugin for rendering emoji like ":point_right:".
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jemoji
+
+search_enabled: true
+
+# Color scheme currently only supports "dark" or nil (light).
+color_scheme: nil
+
+# Aux links for the upper right navigation
+aux_links:
+  "Elango on GitHub":
+    - "https://github.com/echeran"
+  "Elango's blog":
+    - "https://www.elangocheran.com"
+  "LearnTamil.com (Thamil Paadanool)":
+    - "https://www.learntamil.com"
+
+# Makes Aux links open in a new tab.
+aux_links_new_tab: true
+
+# Add a "Back to top" link at the bottom of each page.
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Enable heading anchors
+heading_anchors: true
+
+# Exclude from processing.
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+exclude:
+  - Gemfile
+
+# Google Analytics
+#ga_tracking: 
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings
