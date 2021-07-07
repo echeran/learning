@@ -3,6 +3,8 @@ layout: default
 title: Configuration Options ("Features")
 nav_order: 1000
 has_children: false
+parent: Rust
+grand_parent: Languages
 ---
 
 # Languages
